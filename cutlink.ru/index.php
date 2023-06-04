@@ -25,6 +25,15 @@
                     <button class="btn btn-outline-secondary" name="submit" type="submit" id="button-addon2">Выполнить</button>
                     <img src="" alt="">
                 </div>
+                <?if (!empty($_GET['cut_link'])) {?>
+                    <?
+                    $length = strlen($_SERVER["SERVER_NAME"]);
+                    $str = substr($_GET['cut_link'], $length);
+                    ?>
+                    <div class="link">
+                        <a href="<?=$str?>" target="_blank"><?=$_GET['cut_link']?></a>
+                    </div>
+                <?}?>
                 <?if (array_key_exists('submit',$_GET) && !empty($_GET["cut_link"])) {
                     echo '<img src="'.$_GET['file'].'" alt="">';
                 }?>
