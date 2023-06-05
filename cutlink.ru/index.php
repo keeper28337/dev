@@ -22,7 +22,7 @@
             <form action="" method="GET">
                 <div class="input-group mb-3">
                     <input type="text" value="<?=$_GET['cut_link'];?>" name="cut_link" class="form-control" placeholder="Вставьте ссылку, которую нужно сократить" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" name="submit" type="submit" id="button-addon2">Выполнить</button>
+                    <button class="btn btn-outline-secondary" name="submit" type="submit" id="button-addon2">Сократить</button>
                     <img src="" alt="">
                 </div>
                 <?if (!empty($_GET['cut_link'])) {?>
